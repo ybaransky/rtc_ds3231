@@ -1,3 +1,5 @@
+# use the ADafruit library to acess the RTC
+
 #include <Arduino.h>
 
 #include "RTClib.h"
@@ -45,6 +47,7 @@ void blink(int count) {
   }
   return;
 }
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -53,7 +56,6 @@ void setup() {
   pinMode(LED_BUILTIN,OUTPUT); 
   setup_rtc();
 }
-
 
 void loop() {
   // put your main code here, to run repeatedly:
